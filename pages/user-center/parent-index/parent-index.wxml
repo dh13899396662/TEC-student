@@ -1,0 +1,133 @@
+<view class='container'>
+  <!-- 头部个人信息 -->
+  <view class='user-center-top'>
+    <image class='user-back' src='/images/user-center-back.png'>
+
+    </image>
+    <view class='user-msg'>
+      <image class='user-head' src='/images/user-head.png'></image>
+      <view class='user-welcome'>
+        <text class='weblcome-font'>尊敬的家长</text>
+        <text class='weblcome-name'>张大明</text>
+        <text class='weblcome-font'>，您好</text>
+      </view>
+      <view class='center-line'></view>
+      <view class='center-btn'>
+        <view class='center-btn-item' bindtap='recordBtn'>
+          <image class='btn-item-image' src='/images/icon/write.png'></image>
+          <text class='btn-item-text'>补录信息</text>
+        </view>
+        <view class='center-btn-item'  bindtap='noticeBtn'>
+          <image class='btn-item-image' src='/images/icon/stop-class.png'></image>
+          <text class='btn-item-text'>课程通知(</text>
+          <text class='btn-item-text-red'>2</text>
+          <text class='btn-item-text-right'>)</text>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+  <!--孩子列表-->
+  <view class='children-list'>
+    <view class="children-item">
+      <view class='children-msg'>
+        <view class='children-name'>
+          <image src='/images/student1.png' class='children-head'></image>
+          <text class='children-true-name'>张小明</text>
+        </view>
+        <view class='study-number'>
+          <view class='number-item'>
+            <view class='number-item-msg'>
+              <image class='class-icon' src='/images/icon/class-icon.png'></image>
+              <text class='class-text'>孩子参与的课程数量</text>
+            </view>
+            <view class='number-item-btn' bindtap='goCourse'>
+              <label class='number-lable'>3个</label>
+            </view>
+          </view>
+          <view class='number-item1'>
+            <view class='number-item-msg'>
+              <image class='class-icon1' src='/images/icon/center-icon.png'></image>
+              <text class='class-text1'>孩子参与的培训中心数量</text>
+            </view>
+            <view class='number-item-btn' bindtap='goClass'>
+            <label class='number-lable'>4个</label>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='children-line'></view>
+      <view class='children-classes'>
+        <text class='classes-text'>本周孩子上课提醒</text>
+        <view class='classes-list'>
+          <view class='list-item'>
+            <text class='item-text'>6月12日 14:00</text>
+            <text class='item-text'>星期五</text>
+            <text class='item-text'>外教口语课</text>
+          </view>
+          <view class='list-item'>
+            <text class='item-text'>6月14日 14:00</text>
+            <text class='item-text'>星期五</text>
+            <text class='item-text'>外教口语课</text>
+          </view>
+        </view>
+        <view class='more-btn'>
+          <image class='more-image' src='/images/icon/down.png'></image>
+        </view>
+      </view>
+    
+    </view>
+
+    <view class="children-item">
+     <view class='children-msg'>
+        <view class='children-name'>
+          <image src='/images/student1.png' class='children-head'></image>
+          <text class='children-true-name'>张小明</text>
+        </view>
+        <view class='study-number'>
+          <view class='number-item'>
+            <view class='number-item-msg'>
+              <image class='class-icon' src='/images/icon/class-icon.png'></image>
+              <text class='class-text'>孩子参与的课程数量</text>
+            </view>
+            <view class='number-item-btn' bindtap='goCourse'>
+              <label class='number-lable'>3个</label>
+            </view>
+          </view>
+          <view class='number-item1'>
+            <view class='number-item-msg'>
+              <image class='class-icon1' src='/images/icon/center-icon.png'></image>
+              <text class='class-text1'>孩子参与的培训中心数量</text>
+            </view>
+            <view class='number-item-btn' bindtap='goClass'>
+            <label class='number-lable'>4个</label>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='children-line'></view>
+      <view class='children-classes'>
+        <text class='classes-text'>本周孩子上课提醒</text>
+        <view class='classes-list'>
+          <view class='list-item'>
+            <text class='item-text'>6月12日 14:00</text>
+            <text class='item-text'>星期五</text>
+            <text class='item-text'>外教口语课</text>
+          </view>
+          <view class='list-item'>
+            <text class='item-text'>6月14日 14:00</text>
+            <text class='item-text'>星期五</text>
+            <text class='item-text'>外教口语课</text>
+          </view>
+        </view>
+        <view class='more-btn'>
+          
+        </view>
+      </view>
+    
+    </view>
+  </view>
+
+</view>

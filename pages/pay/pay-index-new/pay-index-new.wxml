@@ -1,0 +1,53 @@
+<view class='wrap'>
+  <view class='school-wrap'>
+    <view class='school-tip'>
+      <i class='iconfont icon-school'></i>
+      切换校区:
+    </view>
+    <picker class='school-pick' bindchange="schoolChange" value='{{ school }}' range='{{ schoolData }}'>
+      {{ schoolData[school] }}
+    </picker>
+  </view>
+  <view class='banner-wrap'>
+    <swiper indicator-dots="{{ option.dot }}">
+        <swiper-item wx:for="{{ 3 }}">
+          <image src='../../../images/banner.jpg' mode="aspectFill"></image>
+        </swiper-item>
+    </swiper>
+  </view>
+  <view class="notice-wrap">
+    <view class='notice-title'>
+      通知公告
+    </view>
+    <view class='notice-cont'>
+      <swiper autoplay vertical circular>
+        <swiper-item wx:for="{{ noticeData }}" wx:key="{{ index }}">
+          <view class="swiper-item" bindtap="toNoticeDetail" data-id="{{ item.id }}">{{ item.title }}</view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class='class-wrap'>
+    <view class='class-head'>
+      <view class='class-title'>课程列表</view>
+      <view class='class-more' bindtap='toClassList'>全部课程</view>
+    </view>
+    <view class='class-body'>
+      <view class='class-item' wx:for="{{ 3 }}">
+        <view class='class-img'>
+          <image src='../../../images/atlas.jpg' mode='aspectFill'></image>
+        </view>
+        <view class='class-infos'>
+          <view class='class-name'>培训课程名称，课程内容上面课程</view>
+          <view class='class-info'>
+            <view class='class-thname'>授课老师：黄老师</view>
+            <view class='class-price'>
+              价格：<text>￥599</text>
+              <view class='class-btn' bindtap='toClassDetail'>查看课程</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

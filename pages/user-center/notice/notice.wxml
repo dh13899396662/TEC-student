@@ -1,0 +1,83 @@
+<view class="container">
+  <view class='tab-view'>
+    <view class='tab-view-item' data-current="0" bindtap='switchNav'>
+      <text class='tab-view-item-text'>上课提醒</text>
+      <view class="tab-view-item-line {{currentTab==0?'active':''}}"></view>
+    </view>
+    <view class='tab-view-item' data-current="1" bindtap='switchNav1'>
+      <text class='tab-view-item-text'>停加课提醒</text>
+      <view class="tab-view-item-line {{currentTab==1?'active':''}}"></view>
+    </view>
+  </view>
+  <!-- <view class='class-notice-view'> -->
+  <swiper class='class-notice-view' current='{{currentTab}}' bindchange='itemChange'>
+    <swiper-item>
+      <view class='notice-item'>
+        <view class='icon-view'>
+          <image class='notice-item-icon' src='/images/icon/stop.png'></image>
+        </view>
+        <view class='msg-view'>
+          <text class="notice-title">停课通知1</text>
+          <text class="notice-time">2018-08-20 15:00:00</text>
+          <view class="notice-msg">由于局部暴雨原因7月10日停课一天。</view>
+        </view>
+      </view>
+      <view class='notice-item'>
+        <view class='icon-view'>
+          <image class='notice-item-icon' src='/images/icon/addclass.png'></image>
+        </view>
+        <view class='msg-view'>
+          <text class="notice-title">加课通知1</text>
+          <text class="notice-time">2018-08-20 15:00:00</text>
+          <view class="notice-msg">由于局部暴雨原因7月10日停课一天。</view>
+        </view>
+      </view>
+      <view class='notice-item'>
+        <view class='icon-view'>
+          <image class='notice-item-icon' src='/images/icon/classnotice.png'></image>
+        </view>
+        <view class='msg-view'>
+          <text class="notice-title">上课通知1</text>
+          <text class="notice-time">2018-08-20 15:00:00</text>
+          <view class="notice-msg">上课提醒内容上课提醒内容上课提醒内容上课上课提 醒内容上课提醒内容上课提醒内容上课。上课提醒内 容上课提醒内容上课提醒内容。
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='notice-item'>
+        <view class='icon-view'>
+          <image class='notice-item-icon' src='/images/icon/stop.png'></image>
+        </view>
+        <view class='msg-view'>
+          <text class="notice-title">停课通知2</text>
+          <text class="notice-time">2018-08-20 15:00:00</text>
+          <view class="notice-msg">由于局部暴雨原因7月10日停课一天。</view>
+        </view>
+      </view>
+      <view class='notice-item'>
+        <view class='icon-view'>
+          <image class='notice-item-icon' src='/images/icon/addclass.png'></image>
+        </view>
+        <view class='msg-view'>
+          <text class="notice-title">加课通知2</text>
+          <text class="notice-time">2018-08-20 15:00:00</text>
+          <view class="notice-msg">由于局部暴雨原因7月10日停课一天。</view>
+        </view>
+      </view>
+      <view class='notice-item'>
+        <view class='icon-view'>
+          <image class='notice-item-icon' src='/images/icon/classnotice.png'></image>
+        </view>
+        <view class='msg-view'>
+          <text class="notice-title">上课通知2</text>
+          <text class="notice-time">2018-08-20 15:00:00</text>
+          <view class="notice-msg">上课提醒内容上课提醒内容上课提醒内容上课上课提 醒内容上课提醒内容上课提醒内容上课。上课提醒内 容上课提醒内容上课提醒内容。
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <!-- </view> -->
+</view>

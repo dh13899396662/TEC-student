@@ -1,0 +1,99 @@
+/* pages/pay/signUp/signUp.wxss */
+page{
+  background-color: #f0f0f0;
+}
+.sign-class{
+  color: #b2b2b2;
+}
+.inputsSign{
+  height: 90rpx;
+  width: 690rpx;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  line-height: 90rpx;
+
+}
+.listsSign{
+  background-color: #fff;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.classes{
+  color: #666;
+}
+.classes2{
+  color: #b2b2b2;
+}
+.classes1{
+  margin-right: 10rpx;
+  color: #32AA91;
+}
+.addStudents{
+  color: #32AA91;
+  font-size: 32rpx;
+}
+.inputsSign1{
+  height: 70rpx;
+  width: 690rpx;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  line-height: 70rpx;
+}
+.font-fm{
+  color: #999;
+  font-size: 26rpx;
+}
+.confirms{
+  margin-top: 100rpx;
+  width: 750rpx;
+  align-items: center;
+}
+.confirmButton{
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  width: 580rpx;
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #31B17F;
+  border-radius: 10rpx;
+}
+.confirmButton1{
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  width: 580rpx;
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #999;
+  border-radius: 10rpx;
+}
+.baoming{
+  transform: scale(0.9,0.9);
+}
+.baoming1{
+  height: 80rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+}
+.baoming12{
+  color: #32AA91;
+}
+.inputsSigns{
+  height: 90rpx;
+  width: 400rpx;
+  padding: 0 30rpx;
+}
+.gettingButton {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 22rpx;
+  border: 0rpx;
+  text-align: center;
+  color: #666;
+  width: 100rpx;
+  padding: 0rpx;
+  margin-top: 15rpx;
+}
+.placeSigns{
+  color: #b2b2b2;
+}

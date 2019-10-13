@@ -1,0 +1,82 @@
+<!--pages/pay/signUp/signUp.wxml-->
+<view>
+  <view class="sign-class inputsSign">课程信息</view>
+      <view class="inputsSign listsSign flex-row-between">
+          <view>选择课程</view>
+          <!-- <view>
+            <picker range="{{classList}}" range-key="names" value="{{selectClassindex}}" bindchange="changeClass">
+              <view class="classes2">
+                {{classList[selectClassindex].names}}
+              </view>
+            </picker>
+          </view> -->
+           <view class="classes flex-row-around">
+            <view class="classes">{{coureInfo.course_name}}</view>
+          </view>
+      </view>
+      <view class="inputsSign listsSign flex-row-between">
+          <view>课程收费</view>
+          <view class="classes flex-row-around">
+            <view class="classes1">{{coureInfo.course_price}}</view>
+            <view>元/节</view> 
+          </view>
+      </view>
+      <view class="inputsSign listsSign flex-row-between">
+          <view>课程时间</view>
+          <view class="classes">
+            {{coureInfo.week_day}}  {{coureInfo.plan_type}}
+          </view>
+      </view>
+      <view class="inputsSign listsSign flex-row-between">
+          <view>任课老师</view>
+          <view class="classes">
+            {{coureInfo.user_name}}
+          </view>
+      </view>
+  <view class="sign-class inputsSign">学生信息</view>
+      <view class="inputsSign listsSign flex-row-between">
+          <view>报名学生</view>
+          <!-- 有学生，选择一个 -->
+          <!-- <view wx:if="{{studentList}}">
+            <picker range="{{studentList}}" range-key="names" value="{{selectStudentindex}}" bindchange="changStudent">
+              <view class="classes2">
+                {{studentList[selectStudentindex].names}}
+              </view>
+            </picker>
+          </view> -->
+          <!-- 没学生，去增加 -->
+          <!-- <view class="addStudents" bindtap="addStudents">可添加＋</view> -->
+          <view class="classes">
+            {{UserInfos.stu_name}}
+          </view>
+      </view>
+  <view class="sign-class inputsSign1">家长信息</view>
+      <view class="inputsSign1 listsSign font-fm flex-row-between">
+          <view>{{UserInfos.stu_motherName}}</view>
+          <view class="classes">{{UserInfos.stu_motherJob}}</view>
+          <view class="classes"> {{UserInfos.stu_motherTel}}</view>
+      </view>
+      <view class="inputsSign1 listsSign font-fm flex-row-between">
+          <view>{{UserInfos.stu_fatherName}}</view>
+          <view class="classes">{{UserInfos.stu_fatherJob}}</view>
+          <view class="classes"> {{UserInfos.stu_fatherTel}}</view>
+      </view>
+</view>
+  <view class="inputsSign listsSign flex-row-between">
+      <view>报名手机</view>
+      <input class="inputsSigns" placeholder="" placeholder-class="placeSigns" disabled="disabled" value="{{phones}}"></input>
+      <button open-type="getPhoneNumber" class='gettingButton' bindgetphonenumber="getPhoneNumbers">自动获取</button>
+  </view>
+<view class="confirms flex-column-between">
+  <view class="flex-row-around">
+    <checkbox class="baoming " checked="{{checkedRead}}" bindtap="changes" ></checkbox>
+    <view class="baoming1 flex-row-around">
+      <view>我已阅读并同意</view>
+      <view class="baoming12" bindtap="showActions">《报名须知》</view>
+    </view>
+  </view>
+  <view wx:if="{{checkedRead}}" bindtap="confirmButtons" class="confirmButton">立即报名</view>
+  <view wx:if="{{!checkedRead}}" class="confirmButton1">立即报名</view>
+</view>
+
+

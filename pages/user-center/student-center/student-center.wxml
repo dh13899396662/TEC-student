@@ -1,0 +1,119 @@
+<view class='center-view'>
+  <view class='student-center-top'>
+    <image src='/images/head-img.png' class='head-img' bindtap="goRecord"></image>
+    <text class='head-name'>张明明,你好！</text>
+    <view class='center-btn'>
+      <view class='btn-item' bindtap='classNotice'>
+        <image class='btn-image' src='/images/icon/write.png'></image>
+        <text class='btn-text ml10'>上课提醒(</text>
+        <text class='btn-text-red'>4</text>
+        <text class='btn-text ml3'>)</text>
+      </view>
+      <view class='line-view'></view>
+      <view class='btn-item'  bindtap='stopNotice'>
+        <image class='btn-image' src='/images/icon/stop-class.png'></image>
+        <text class='btn-text  ml10'>停课加课提醒(</text>
+        <text class='btn-text-red'>4</text>
+        <text class='btn-text ml3'>)</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='user-item-list'>
+
+    <view class="user-item-row">
+      <view class='user-item ml24' bindtap="gotimetable">
+        <image class='my-item-image' src='/images/my-class.png'></image>
+        <text class='my-item-title'>课程表</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>我的班级共</text>
+          <text class='my-item-msg-green'>3</text>
+          <text class='my-item-msg'>个</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="user-item-row">
+      <view class='user-item ml24' bindtap='goCenter'>
+        <image class='my-item-image' src='/images/my-center.png'></image>
+        <text class='my-item-title'>培训中心</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>我的培训中心共</text>
+          <text class='my-item-msg-green'>3</text>
+          <text class='my-item-msg'>个</text>
+        </view>
+      </view>
+      <view class='user-item ml12' bindtap='goCourse'>
+        <image class='my-item-image' src='/images/my-course.png'></image>
+        <text class='my-item-title'>我的课程</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>我的参加的课程共</text>
+          <text class='my-item-msg-green'>3</text>
+          <text class='my-item-msg'>个</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="user-item-row">
+      <view class='user-item ml24' bindtap='goClass'>
+        <image class='my-item-image' src='/images/my-class.png'></image>
+        <text class='my-item-title'>我的班级</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>我的班级共</text>
+          <text class='my-item-msg-green'>3</text>
+          <text class='my-item-msg'>个</text>
+        </view>
+      </view>
+      <view class='user-item ml12' >
+        <image class='my-item-image' src='/images/my-write.png'></image>
+        <text class='my-item-title'>我的考勤</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>增加新的信息</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="user-item-row">
+      <view class='user-item ml24' bindtap="goreport">
+        <image class='my-item-image' src='/images/my-class.png'></image>
+        <text class='my-item-title'>门禁挂失</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>我的班级共</text>
+          <text class='my-item-msg-green'>3</text>
+          <text class='my-item-msg'>个</text>
+        </view>
+      </view>
+      <view class='user-item ml12' bindtap="gosick">
+        <image class='my-item-image' src='/images/my-write.png'></image>
+        <text class='my-item-title'>学生请假</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>增加新的信息</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="user-item-row">
+      <view class='user-item ml24' bindtap="goatlas">
+        <image class='my-item-image' src='/images/my-class.png'></image>
+        <text class='my-item-title'>我的风采</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>我的班级共</text>
+          <text class='my-item-msg-green'>3</text>
+          <text class='my-item-msg'>个</text>
+        </view>
+      </view>
+      <view class='user-item ml12' bindtap="gocomment">
+        <image class='my-item-image' src='/images/my-write.png'></image>
+        <text class='my-item-title'>我的评论</text>
+        <view class='my-item-text'>
+          <text class='my-item-msg'>增加新的信息</text>
+        </view>
+      </view>
+    </view>
+
+
+
+
+
+  </view>
+</view>

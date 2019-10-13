@@ -1,0 +1,51 @@
+<!--pages/user-center/addStudet/addStudent.wxml-->
+<view>
+  <view class="sign-class inputsSign">学生信息</view>
+     <view class="inputsSign listsSign flex-row-between">
+        <view>学生姓名</view>
+        <input class="inputsSigns" placeholder="请输入学生姓名" placeholder-class="placeSigns" bindinput="bindstu_name"></input>
+    </view>
+    <view class="inputsSign listsSign flex-row-between">
+        <view>出生日期</view>
+        <picker class="pickers" mode="date" value="{{stu_birthDay}}" start="2000-01-01" end="2099-12-31" bindchange="bindDateChange">
+          <view class="picker">
+          {{stu_birthDay}}
+          </view>
+        </picker>
+    </view>
+    <view class="inputsSign listsSign flex-row-between">
+        <view>学生性别</view>
+        <radio-group class='sexss' bindchange="changeSex">
+          <radio class="radio" wx:for-items="{{sexs}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
+              <text>{{item.value}}</text>
+          </radio>
+        </radio-group>
+    </view>
+     <view class="inputsSign listsSign flex-row-between">
+        <view>父亲姓名</view>
+        <input class="inputsSigns" placeholder="请输入父亲姓名" placeholder-class="placeSigns" bindinput="bindstu_fatherName"></input>
+    </view>
+    <view class="inputsSign listsSign flex-row-between">
+        <view>联系电话</view>
+        <input class="inputsSigns" placeholder="请输入父亲联系电话" placeholder-class="placeSigns" bindinput="bindstu_fatherTel"></input>
+    </view>
+    <view class="inputsSign listsSign flex-row-between">
+        <view>工作单位</view>
+        <input class="inputsSigns" placeholder="请输入父亲工作单位" placeholder-class="placeSigns" bindinput="bindstu_fatherJob"></input>
+    </view>
+     <view class="inputsSign listsSign flex-row-between">
+        <view>母亲姓名</view>
+        <input class="inputsSigns" placeholder="请输入母亲姓名" placeholder-class="placeSigns" bindinput="bindstu_motherName"></input>
+    </view>
+    <view class="inputsSign listsSign flex-row-between">
+        <view>联系电话</view>
+        <input class="inputsSigns" placeholder="请输入母亲联系电话" placeholder-class="placeSigns" bindinput="bindstu_motherTel"></input>
+    </view>
+    <view class="inputsSign listsSign flex-row-between">
+        <view>工作单位</view>
+        <input class="inputsSigns" placeholder="请输入母亲工作单位" placeholder-class="placeSigns" bindinput="bindstu_motherJob" ></input>
+    </view>
+</view>
+<view class="confirms flex-column-between">
+  <view class="confirmButton" bindtap="register">完成</view>
+</view>

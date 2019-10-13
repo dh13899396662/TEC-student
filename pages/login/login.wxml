@@ -1,0 +1,13 @@
+<!-- 显示授权登陆弹出框 -->
+<view class='wrap'>
+  <image class='wrap-bg' src='../../images/login-tip-bg.jpg' mode='aspectFill'></image>
+  <view class='tip-box'>
+    <view class='tip-logo'>
+      <image src="../../images/avator.jpg" mode='aspectFill'></image>
+    </view>
+    <view class='tip-info'>使用家教服务，需要您授权登录</view>
+  </view>
+  <button class='get-btn' type="primary" bindgetuserinfo="getUserInfo" open-type="getUserInfo">
+    授权登录
+  </button>
+</view>

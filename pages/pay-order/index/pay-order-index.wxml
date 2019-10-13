@@ -1,0 +1,151 @@
+<view class='container'>
+  <view class='tab-view'>
+    <view class='tab-view-item'  data-current="0" bindtap='switchNav'>
+      <text class='tab-view-item-text'>待缴费</text>
+      <view class="tab-view-item-line {{currentTab==0?'active':''}}"></view>
+    </view>
+    <view class='tab-view-item'  data-current="1" bindtap='switchNav1'>
+      <text class='tab-view-item-text'>已缴费</text>
+      <view class="tab-view-item-line {{currentTab==1?'active':''}}"></view>
+    </view>
+  </view>
+  <view class='check-view'>
+    <view class='check-item'>
+      <text class='check-item-text'>三个月内</text>
+      <image class="check-item-icon" src='/images/icon/push-down.png'></image>
+    </view>
+    <view class='check-item'>
+      <text class='check-item-text'>所有机构</text>
+      <image class="check-item-icon" src='/images/icon/push-down.png'></image>
+    </view>
+    <view class='check-item'>
+      <text class='check-item-text'>0-200元</text>
+      <image class="check-item-icon" src='/images/icon/push-down.png'></image>
+    </view>
+  </view>
+  <swiper current='{{currentTab}}' bindchange='itemChange'>
+    <swiper-item>
+      <scroll-view class='order-list'>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/1.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>好孩子家教培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/2.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>小萤星艺术培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/3.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>好孩子家教培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/4.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>好孩子家教培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view class='order-list'>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/1.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>好孩子家教培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/2.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>小萤星艺术培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/3.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>好孩子家教培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+        <view class='order-list-item' bindtap='goDetail'>
+          <view class='item-side'>
+            <image src='/images/4.png' class='item-image'></image>
+          </view>
+          <view class='item-middle'>
+            <text class='item-name'>好孩子家教培训中心</text>
+            <text class='item-item'>缴费项目：第二学期学费</text>
+            <text class='item-time'>缴费时间：2018-09-12</text>
+          </view>
+          <view class='item-side'>
+            <view class='height-view'></view>
+            <text class='item-money'>180.00</text>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+
+</view>

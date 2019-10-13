@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="course-item" wx:for="{{Lists}}">
+    <view class="course-msg">
+      <view class='left-view'>
+        <image class='left-view-head' src='/images/student1.png'></image>
+        <view class='left-view-name'>{{UserInfo.stu_name}}</view>
+        <view class='left-view-btn' data-indexs="{{index}}" bindtap='goContinue'>
+        续课
+        </view>
+      </view>
+      <view class='right-view'>
+        <view class='right-msg-view'>
+          <view class='msg-item'>
+            <text class='item-title'>课程名称：</text>
+            <text class='item-msg'>{{item.course_name}}</text>
+          </view>
+          <view class='msg-item'>
+            <text class='item-title'>课程价格：</text>
+            <text>{{item.course_price}}</text>
+            <text class='item-msg'>元</text>
+          </view>
+          <view class='msg-item'>
+            <text class='item-title'>代课老师：</text>
+            <text class='item-msg'>{{item.user_name}}</text>
+          </view>
+          <view class='msg-item'>
+            <text class='item-title'>老师电话：</text>
+            <text class='item-msg' bindtap='callPhone'>{{item.phonenumber}}</text>
+          </view>
+          <view>
+            <text class='item-title'>课程介绍：</text>
+            <text class='item-msg'>{{item.course_memo}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <!-- <view class='notice-view'>
+      <image class='course-notice-img' src='/images/icon/course-notice.png'></image>
+      <view class='course-notice-msg'>停课通知：由于局部暴雨原因7月10日停课一天。</view>
+    </view> -->
+  </view>
+</view>

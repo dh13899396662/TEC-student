@@ -1,0 +1,58 @@
+/* pages/login/login.wxss */
+page {
+  background-color: #fff;
+  font-family: PingFang SC;
+}
+
+.wrap {
+}
+
+.wrap-bg {
+  width: 750rpx;
+  height: 400rpxx;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.tip-box {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 60rpx 0;
+}
+
+.tip-logo {
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #000;
+  border: 4rpx solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.tip-logo > image {
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+}
+
+.tip-info {
+  line-height: 48rpx;
+  font-size: 36rpx;
+  color: #fff;
+  padding-top: 40rpx;
+}
+
+.get-btn {
+  position: relative;
+  z-index: 2;
+  width: 500rpx;
+  height: 90rpx;
+  border: 0;
+  border-radius: 45rpx;
+  margin-top: 100rpx;
+}

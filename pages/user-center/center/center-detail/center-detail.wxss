@@ -1,0 +1,148 @@
+.content-view{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.center-msg{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 556rpx;
+  background-color: white;
+}
+
+
+.center-image{
+  width: 100%;
+  height: 376rpx;
+  z-index: 0;
+}
+
+.name-view{ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 110rpx;
+  background-color:#000000;
+  z-index: 1;
+  opacity: 0.7;
+  margin-top: -110rpx;
+}
+
+.name-text{
+  color: white;
+  margin-left: 30rpx;
+}
+
+.line-view{
+  height: 2rpx;
+  background-color: #E5E5E5;
+  width: 100%;
+  margin-left: 30rpx;
+  margin-top: 32rpx;
+}
+
+.line-view1{
+  height: 2rpx;
+  background-color: #E5E5E5;
+  width: 100%;
+  margin-left: 30rpx;
+  
+}
+
+
+
+.msg-item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 89rpx;
+  align-items: center;
+}
+
+.msg-icon{
+  height: 34rpx;
+  width: 36rpx;
+  margin-left: 30rpx;
+}
+
+.msg-title{
+  font-size: 28rpx;
+  color: #353535;
+  margin-left: 14rpx;
+  
+}
+
+.msg-msg{
+  font-size: 28rpx;
+  color: #888888;
+  margin-left: 16rpx;
+}
+
+.center-introduce{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: white;
+}
+
+.introduce-item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.introduce-item-title{
+  display: flex;
+  flex-direction: row;
+}
+
+.introduce-item-msg{
+  color: #888888;
+  font-size: 28rpx;
+  margin-top:34rpx;
+  letter-spacing: 1rpx;
+  margin-left: 30rpx;
+  line-height: 48rpx;
+
+}
+
+.item-title-view{
+  background-color: #31B17F;
+  height: 26rpx;
+  width: 6rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.item-title-text{
+  color: #353535;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  margin-top: 22rpx;
+}
+
+.block-view{
+  height: 20rpx;
+  width: 100%;
+}
+
+.goBack{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 690rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+  background-color: #32AA91;
+  color: white;
+  margin-top: 30rpx;
+  border-width: 2rpx;
+  border-color: #32AA91;
+
+}

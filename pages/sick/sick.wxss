@@ -1,0 +1,52 @@
+/* pages/sick/sick.wxss */
+page{
+  background-color: #f0f0f0;
+}
+.sign-class{
+  color: #b2b2b2;
+}
+.inputsSign{
+  height: 90rpx;
+  width: 690rpx;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  line-height: 90rpx;
+
+}
+.listsSign{
+  background-color: #fff;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.inputsSigns{
+  height: 90rpx;
+  width: 500rpx;
+}
+.placeSigns{
+  color: #b2b2b2;
+  font-size: 30rpx;
+}
+.radio{
+  margin-right: 30rpx;
+  transform: scale(0.9,0.9);
+}
+.sexss{
+  width: 500rpx;
+}
+.confirms{
+  margin-top: 100rpx;
+  width: 750rpx;
+  align-items: center;
+}
+.confirmButton{
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  width: 580rpx;
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #31B17F;
+  border-radius: 10rpx;
+}
+.pickers{
+  width: 500rpx;
+}

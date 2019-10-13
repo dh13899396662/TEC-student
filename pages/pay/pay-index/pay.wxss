@@ -1,0 +1,150 @@
+
+swiper{
+  height: 1002rpx;
+  width: 100%;
+  
+}
+
+/* swiper swiper-item{
+  width: 586rpx;
+} */
+
+.item-view{
+  height: 964rpx;
+  width: 586rpx;
+  background-color: green;
+  margin-top: 38rpx;
+}
+
+.page-index-text{
+  font-size: 40rpx;
+  color: #888888;
+  
+}
+
+
+.page-index-view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pay-container{
+  display: flex;
+  flex-direction: column;
+  height: 966rpx;
+  width: 588rpx;
+   /* background-color: green;  */
+  margin-top: 40rpx;
+  justify-content: flex-start;
+}
+
+.pay-back-images{
+  position:absolute; 
+  height: 966rpx;
+  width: 590rpx;
+  z-index:-1;
+}
+
+.pay-center-image{
+  height: 436rpx;
+  width: 580rpx;
+  margin-left: 5.5rpx;
+  margin-top: 5.5rpx;
+}
+
+.pay-items{
+  /* background-color: green; */
+  height: 282rpx;
+  width: 538rpx;
+  margin-top: 30rpx;
+  margin-left: 28rpx;
+}
+
+.pay-center-name{
+  font-size: 32rpx;
+  color: #353535;
+  margin-left: 10rpx;
+}
+
+.pay-item{
+  display: flex;
+  flex-direction: row;
+  height: 42rpx;
+  width: 500rpx;
+  margin-top: 14rpx;
+  /* background-color: green; */
+  
+}
+
+.pay-item-icon{
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: 6rpx;
+  margin-left: 2rpx;
+}
+
+.pay-item-title{
+  font-size: 26rpx;
+  color: #888888;
+  margin-left: 16rpx;
+  margin-top: 3rpx;
+  width: 104rpx;
+}
+
+/*立即缴费按钮*/
+.pay-btn{
+  height: 32rpx;
+  width: 140rpx;
+  background-color: #31B17F;
+  margin-left: 54rpx;
+  color: white;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+  padding: 24rpx 170rpx 32rpx 170rpx;
+  margin-top: 85rpx;
+}
+
+.money-text{
+  font-size: 28rpx;
+  color: #32AA91;
+  float: right;
+}
+
+.yuan{
+  float: right;
+  font-size:26rpx;
+  margin-left: 10rpx;
+}
+
+.top{
+  margin-top: 20rpx;
+}
+
+.msg-pay-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 240rpx;
+  margin-left:100rpx;
+}
+
+.right-msg-pay-view{
+  font-size: 28rpx;
+  color: #353535;
+}
+
+/*缩放*/
+.active {
+  opacity: 1;
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}  
+.quiet {
+  opacity: 0.4;
+  transform: scale(0.9111111);
+  transition: all 0.2s ease-in 0s;
+}

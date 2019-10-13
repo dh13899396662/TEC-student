@@ -1,0 +1,187 @@
+/** 新首页 **/
+page {
+  background-color: #f5faf7;
+  font-family: PingFang SC;
+  padding-top: 0;
+}
+
+.school-wrap {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 60rpx;
+  background-image: linear-gradient(#31B17F, rgba(49, 176, 127, .5));
+  box-sizing: border-box;
+  padding: 10rpx 40rpx;
+  display: flex;
+}
+
+.school-tip {
+  width: 170rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+
+.school-pick {
+  width: 590rpx;
+  font-size: 30rpx;
+  color: #fff;
+  padding-left: 20rpx;
+}
+
+.wrap {
+}
+
+.banner-wrap,
+.banner-wrap > swiper,
+.banner-wrap > swiper-item,
+.banner-wrap image {
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.notice-wrap {
+  width: 650rpx;
+  background-color: #fff;
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, .08);
+  border-radius: 10rpx;
+  padding: 10rpx 30rpx;
+  margin: 40rpx 20rpx;
+  display: flex;
+}
+
+.notice-title {
+  width: 70rpx;
+  line-height: 32rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #31B17F;
+  border-right: 2rpx solid #e9e9e9;
+  padding-right: 30rpx;
+}
+
+.notice-cont {
+	width: 540rpx;
+	padding-left: 30rpx;
+}
+
+.notice-cont swiper {
+	height: 60rpx;
+}
+
+.notice-cont .swiper-item {
+	height: 70rpx;
+	line-height: 70rpx;
+	font-size: 30rpx;
+	word-break: break-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.class-wrap {
+  width: 670rpx;
+  padding: 20rpx 40rpx 0;
+  margin: 40rpx  0;
+}
+
+.class-head {
+  width: 100%;
+  line-height: 50rpx;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.class-title {
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #111;
+  float: left;
+}
+
+.class-more {
+  font-size: 26rpx;
+  color: #777;
+  float: right;
+}
+
+.class-body {
+  width: 670rpx;
+  box-sizing: border-box;
+  padding: 20rpx 10rpx 0;
+}
+
+.class-item {
+  background-color: #fff;
+  border-radius: 10rpx;
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, .08);
+  overflow: hidden;
+  margin-bottom: 60rpx;
+}
+
+.class-item:active {
+  background-color: #f5faf7;
+}
+
+.class-img,
+.class-img > image {
+  width: 650rpx;
+  height: 300rpx;
+  background: #f5faf7;
+  display: block;
+}
+
+.class-infos {
+  padding: 30rpx 30rpx 20rpx;
+}
+
+.class-name {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.class-info {
+  padding-top: 10rpx;
+}
+
+.class-thname {
+  line-height: 30rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.class-price {
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #ff8417;
+  padding-top: 10rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.class-price text {
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.class-price .class-btn {
+  position: absolute;
+  z-index: 2;
+  top: 20rpx;
+  right: 0;
+  width: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #31B17F;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+}

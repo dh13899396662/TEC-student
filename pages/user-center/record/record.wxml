@@ -1,0 +1,41 @@
+<view class='container'>
+  <view class='student-view'>
+    <text class='student-text'>学生信息</text>
+  </view>
+  <form>
+    <view class='input-view'>
+      <view class='input-item'>
+        <text class='item-text'>家长姓名</text>
+        <input class='item-input' type='text' placeholder-class="placeholder-text" placeholder='请输入家长姓名'></input>
+      </view>
+      <view class='line-view'></view>
+      <view class='input-item'>
+        <text class='item-text'>家长电话</text>
+        <input class='item-input' type='number' placeholder-class="placeholder-text" placeholder='请输入家长电话'></input>
+      </view>
+      <view class='line-view'></view>
+      <view class='input-item'>
+        <text class='item-text'>学生姓名</text>
+        <input class='item-input' type='text' placeholder-class="placeholder-text" placeholder='请输入学生姓名'></input>
+      </view>
+      <view class='line-view'></view>
+      <view class='input-item'>
+        <text class='item-text'>学生电话</text>
+        <input class='item-input' type='number' placeholder-class="placeholder-text" placeholder='请输入学生电话'></input>
+      </view>
+    </view>
+
+    <view class='student-view'>
+      <text class='student-text'>选择培训中心</text>
+    </view>
+
+    <view class='check-view'>
+      <text class='item-text'>培训中心</text>
+      <input class='item-input' type='number' placeholder-class="placeholder-text" placeholder='请选择培训中心'></input>
+      <image></image>
+    </view>
+    <button class='submit-btn'>保存</button>
+  </form>
+
+
+</view>

@@ -1,0 +1,11 @@
+<view class="success-page">
+  <image src='/images/icon/pay-success.png' class='success-image'></image>
+  <view class='pay-msg'>
+    <text style='font-size:40rpx;color:#353535;'>缴费成功</text>
+    <text  style='margin-left:10rpx;font-size:40rpx;color:#32AA91;'>100元</text>
+  </view>
+  <text style='margin-top:50rpx;font-size:28rpx;color:#888888;'>请注意核实您的账务</text>
+
+  <view class='sure-btn' bindtap='goIndex'>确定</view>
+  <view class='check-btn' bindtap='checkPayMsg'>查看账目明细</view>
+</view>

@@ -1,0 +1,271 @@
+.user-center-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 358rpx;
+  background-color: #31B17F; 
+}
+
+.user-back{
+  position:absolute;
+  width: 100%;
+  height: 234rpx;
+  z-index: 0;
+}
+
+.user-msg{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 358rpx;
+  z-index: 1;
+}
+
+.user-head{
+  height: 100rpx;
+  width: 100rpx;
+  margin-bottom: 23rpx;
+}
+
+.user-welcome{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rpx;
+  margin-bottom: 38rpx;
+}
+
+.weblcome-font{
+  font-size: 32rpx;
+  color: #353535;
+  letter-spacing: 2rpx;
+}
+
+.weblcome-name{
+  font-size: 32rpx;
+  color: #31B17F;
+  font-weight: 5rpx;
+  letter-spacing: 2rpx;
+}
+
+.center-line{
+  height: 2rpx;
+  background-color: #E0E0E0;
+  width: 686rpx;
+  margin-bottom: 0rpx;
+}
+
+.center-btn{
+  display: flex;
+  flex-direction: row;
+  height: 92rpx;
+  width: 100%;
+}
+
+.center-btn-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+}
+
+.btn-item-image{
+  height: 32rpx;
+  width: 32rpx;
+}
+
+.btn-item-text{
+  font-size: 26rpx;
+  color: #888888;
+  margin-left: 4rpx;
+  letter-spacing: 1rpx;
+
+}
+
+.btn-item-text-right{
+  font-size: 26rpx;
+  color: #888888;
+  margin-left: 4rpx;
+  letter-spacing: 1rpx;
+
+}
+
+.btn-item-text-red{
+  color: #F9706F;
+  font-size: 26rpx;
+  margin-left: 4rpx;
+  letter-spacing: 1rpx;
+}
+
+/*孩子列表样式*/
+.children-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.children-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 440rpx;
+  width: 688rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  background-color: white;
+}
+
+.children-msg{
+  display: flex;
+  flex-direction: row;
+  height: 194rpx;
+  width: 100%;
+}
+
+.children-line{
+  height: 2rpx;
+  width: 626rpx;
+  background-color: #E0E0E0;
+}
+
+.children-classes{
+  width: 100%;
+  height: 244rpx;
+}
+
+.children-name{
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+}
+
+.children-head{
+  height: 100rpx;
+  width: 100rpx;
+  margin-top: 20rpx;
+  margin-left: 32rpx;
+}
+
+.children-true-name{
+  font-size: 24rpx;
+  color: #353535;
+  margin-left: 46rpx;
+  margin-top: 6rpx;
+  
+}
+
+.study-number{
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+
+.number-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 97rpx;
+}
+
+.number-item1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 97rpx;
+}
+
+.class-icon{
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.class-text{
+  margin-left: 14rpx;
+  font-size: 26rpx;
+  color: #888888;
+}
+
+.class-icon1{
+  margin-top: 10rpx;
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.class-text1{
+  margin-top: 10rpx;
+  margin-left: 14rpx;
+  font-size: 26rpx;
+  color: #888888;
+}
+
+
+.number-lable{
+  color: #31B17F;
+  font-size: 28rpx;
+  text-decoration-line: underline;
+  margin-right: 32rpx;
+}
+
+.children-classes{
+  height: 244rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%；
+}
+
+.classes-text{
+  font-size: 30rpx;
+  color: #353535;
+  height: 38rpx;
+  width: 250rpx;
+  margin-left: 32rpx;
+  margin-top: 20rpx;
+}
+
+.classes-list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 28rpx;
+    height: 36rpx;
+    width: 660rpx;
+}
+
+.item-text{
+  height: 30rpx;
+  font-size: 26rpx;
+  color: #888888;
+}
+
+.more-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 76rpx;
+}
+
+.more-image{
+  height: 14rpx;
+  width: 24rpx;
+}

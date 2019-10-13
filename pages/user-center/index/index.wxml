@@ -1,0 +1,4 @@
+<view class='index-view'>
+  <view class='item-view' bindtap='goParents'>我是家长</view>
+  <view class='item-view' bindtap='goStudents'>我是学生</view>
+</view>

@@ -1,0 +1,92 @@
+/**index.wxss**/
+.index-container{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+}
+
+.image-background{
+  width: 100%;
+  height: 542rpx;
+}
+
+.background-image{
+  position:absolute;
+  width: 100%;
+  height: 542rpx;
+  z-index: 0;
+}
+
+.index-image{
+  height: 432rpx;
+  width: 484rpx;
+  margin-top: 56rpx;
+  margin-left: 124rpx;
+}
+
+.form-view{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 60rpx;
+}
+
+.input-view{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  width: 596rpx;
+  margin-left: 78rpx;
+  height: 50rpx;
+  
+}
+
+.line-view{
+  width: 596rpx;
+  height: 2rpx;
+  background-color: #E0E0E0;
+  margin-top: 10rpx;
+  margin-left: 78rpx;
+}
+
+.input-icon{
+  height: 38rpx;
+  width: 38rpx;
+  margin-top: 4rpx;
+  margin-left: 30rpx;
+}
+
+.input-style{
+  height:38rpx;
+  width: 250rpx;
+  margin-left: 50rpx;
+  font-size: 24rpx;
+  color: #888888;
+
+}
+
+
+.btn-view{
+  width: 596rpx;
+  margin-top: 80rpx;
+  margin-left: 78rpx;
+}
+
+.yz-btn{
+  width: 598rpx;
+  height: 78rpx;
+  font-size: 32rpx;
+  background-color: #32AA91;
+  color: white;
+}
+
+.get-msg{
+  height: 24rpx;
+  width: 180rpx;
+  color: #55C1E4;
+  font-size: 24rpx;
+  margin-left: 156rpx;
+  margin-top: 8rpx;
+}

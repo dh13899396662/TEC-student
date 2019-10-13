@@ -1,0 +1,54 @@
+<scroll-view scroll-y="true" class="content-view">
+  <view class="center-msg">
+    <image class='center-image' src='/images/center-img.png'></image>
+    <view class='name-view'>
+      <text class='name-text'>好孩子家教培训中心</text>
+
+    </view>
+    <view class='msg-item'>
+      <image class='msg-icon' src='/images/icon/center-address.png'></image>
+      <text class='msg-title'>地址:</text>
+      <text class='msg-msg' bindtap='makeMap'>乌鲁木齐朝阳大街22号</text>
+    </view>
+    <view class='line-view1'></view>
+    <view class='msg-item'>
+      <image class='msg-icon' src='/images/icon/center-phone.png'></image>
+      <text class='msg-title'>电话:</text>
+      <text class='msg-msg' bindtap='callPhone'>13123456789</text>
+    </view>
+  </view>
+  <view class='center-introduce'>
+    <view class='introduce-item'>
+      <view class='introduce-item-title'>
+        <view class="item-title-view"></view>
+        <text class="item-title-text">授课范围</text>
+      </view>
+      <view class='introduce-item-msg'>
+        小学英语、小学数学、初中英语、小学英语、小学数学，初中英语、小学英语、小学数学
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='introduce-item'>
+      <view class='introduce-item-title'>
+        <view class="item-title-view"></view>
+        <text class="item-title-text">师资力量</text>
+      </view>
+      <view class='introduce-item-msg'>
+        一对一授课，为学习护航；上课时间灵活，自习课老师程陪读；学大老师抢先占，5年以上专职老师、5星级教师。
+      </view>
+    </view>
+
+    <view class='line-view'></view>
+    <view class='introduce-item'>
+      <view class='introduce-item-title'>
+        <view class="item-title-view"></view>
+        <text class="item-title-text">交通</text>
+      </view>
+      <view class='introduce-item-msg'>
+        乘坐341路公交车在巴南大道站下车，换乘轻轨3号线在“鱼胡路口”站下，换乘387路公交车或387路专线车。
+      </view>
+    </view>
+    <view class='block-view'></view>
+  </view>
+  <view class="goBack">返回</view>
+</scroll-view>

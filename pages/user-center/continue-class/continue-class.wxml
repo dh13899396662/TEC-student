@@ -1,0 +1,39 @@
+<view class='container'>
+  <view class="continue-view">
+    <image src='/images/student1.png' class='view-user-head'></image>
+    <view class="line-view"></view>
+    <view class='msg-view'>
+      <text class='msg-title'>课程名称：</text>
+      <text class='msg-content'>{{Lists.course_name}}</text>
+    </view>
+    <view class="line-view"></view>
+    <view class='msg-view'>
+      <text class='msg-title'>新任代课老师：</text>
+      <text class='msg-content'>{{Lists.user_name}}</text>
+    </view>
+    <view class="line-view"></view>
+    <view class='msg-view'>
+      <text class='msg-title'>新任上课时间：</text>
+      <text class='msg-content'>{{Lists.course_startTime}} - {{Lists.course_endTime}}</text>
+    </view>
+    <view class="line-view"></view>
+    <view class='msg-view'>
+      <text class='msg-title'>续课费用：</text>
+      <text class='msg-content'>{{Lists.course_price}}元</text>
+    </view>
+    <view class="line-view"></view>
+    <view class='msg-view'>
+      <text class='msg-title'>新课时间段：</text>
+      <text class='msg-content'>{{Lists.plan_type}}</text>
+    </view>
+    <view class="line-view"></view>
+    <view class='msg-view'>
+      <text class='msg-title'>新课周期：</text>
+      <text class='msg-content'>3个月</text>
+    </view>
+  </view>
+  <view class='btn-view'>
+    <view class="thinkBtn">我在想想</view>
+    <view class='continueBtn'>我要续课</view>
+  </view>
+</view>

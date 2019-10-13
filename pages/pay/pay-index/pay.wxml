@@ -1,0 +1,59 @@
+<view class='container'>
+  <swiper previous-margin='41px' next-margin='30px' circular='true' bindchange='changPay'>
+    <block wx:for="{{Lists}}">
+      <swiper-item>
+        <view class="pay-container {{payIndex == index ? 'active' : 'quiet'}}">
+          <image class='pay-back-images' src='/images/pay/pay-back.png'>
+
+          </image>
+          <image class='pay-center-image' src='/images/pay/center-head.png' bindtap="goNoticeList"></image>
+
+          <view class="pay-items">
+            <text class='pay-center-name'>好孩子家教培训中心</text>
+            <view class='pay-item top'>
+              <image src='/images/icon/pay-money.png' class='pay-item-icon'></image>
+              <text class='pay-item-title'>课程收费</text>
+              <view class='msg-pay-view'>
+                <text class='money-text'>{{item.course_price}}</text>
+                <text class='yuan'>元/节</text>
+              </view>
+            </view>
+            <view class='pay-item'>
+              <image src='/images/icon/pay-time.png' class='pay-item-icon'></image>
+
+              <text class='pay-item-title'>报名时间</text>
+              <view class='msg-pay-view'>
+                <text class='right-msg-pay-view'>{{item.course_startTime}}</text>
+              </view>
+            </view>
+            <view class='pay-item'>
+              <image src='/images/icon/pay-people.png' class='pay-item-icon'></image>
+
+              <text class='pay-item-title'>任课老师</text>
+              <view class='msg-pay-view'>
+                <text class='right-msg-pay-view'>{{item.user_name}}</text>
+              </view>
+            </view>
+            <view class='pay-item'>
+              <image src='/images/icon/pay-item.png' class='pay-item-icon'></image>
+
+              <text class='pay-item-title'>缴费项目</text>
+              <view class='msg-pay-view'>
+                <text class='right-msg-pay-view'>{{item.course_name}}</text>
+              </view>
+            </view>
+          </view>
+
+
+          <view class='pay-btn' bindtap='gopay' data-indexs="{{index}}">立即报名</view>
+        </view>
+        
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='page-index-view'>
+    <text class='page-index-text'>{{payIndex+1}}</text>
+    <text class='page-index-text ml20 mr20'>/</text>
+    <text class='page-index-text'>{{totalNums}}</text>
+  </view>
+</view>

@@ -1,0 +1,573 @@
+<scroll-view scroll-y="true" class="container">
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student1.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student2.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student1.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student2.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student1.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student2.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student1.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='class-item'>
+    <view class='msg-first-view'>
+      <view class='student-item'>
+        <image src='/images/student2.png' class='first-item-head'></image>
+        <view class='first-item-name'>张晓明</view>
+      </view>
+      <view class='class-name-view'>
+        <view class='name-view-item'>
+          <text class="name-text-big">课程名称：</text>
+          <text class="name-text-gray">英语口语班</text>
+        </view>
+        <view class='name-view-item'>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>班级人数：</text>
+            <text class='name-text-small-gray'>12人</text>
+          </view>
+          <view class='name-view-helf'>
+            <text class='name-text-small'>上课时间：</text>
+            <text class='name-text-small-gray'>17:00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-second-view'>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title'>开班时间：</text>
+          <text class='class-msg-gray'>2018-08-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title ml40'>到期时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>代课老师：</text>
+          <text class='class-msg-title green-color'>周XX老师</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>老师电话：</text>
+          <text class='class-msg-title green-color' bindtap='callPhone'>13244556677</text>
+        </view>
+      </view>
+      <view class="second-item">
+        <view class='item-helf-left'>
+          <text class='class-msg-title titlefont'>缴费时间：</text>
+          <text class='class-msg-gray'>2018-02-20</text>
+        </view>
+        <view class='item-helf-right'>
+          <text class='class-msg-title titlefont ml40'>下次缴费时间：</text>
+          <text class='class-msg-gray'>2019-02-20</text>
+        </view>
+      </view>
+    </view>
+    <view class='line-view'></view>
+    <view class='msg-third-view'>
+      <view class='day-view'>
+        <view class='day-title'>
+          <image class='title-image' src="/images/icon/day.png"></image>
+          <text class='title-text'>我上课的天数：</text>
+        </view>
+        <view class='day'>
+          <text class='day-text-green'>24</text>
+          <text class='day-text'>天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

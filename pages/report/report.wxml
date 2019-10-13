@@ -1,0 +1,20 @@
+<!--pages/report/report.wxml-->
+<view>
+  <view class="sign-class inputsSign">门禁挂失</view>
+    <view class="inputsSign listsSign flex-row-between">
+        <view>选择门禁卡</view>
+        <picker class="pickers" mode="selector" range="{{cardlist}}" range-key='cardName' value="{{index}}"  bindchange="bindPickerChange">
+          <view class="picker">
+          {{cardlist[index].cardName}}
+          </view>
+        </picker>
+    </view>
+     <view class="inputsSign listsSign flex-row-between">
+        <view>卡号</view>
+        <input class="inputsSigns" value="{{cardlist[index].cardNum}}" disabled="disabled" ></input>
+    </view>
+
+</view>
+<view class="confirms flex-column-between">
+  <view class="confirmButton" bindtap="confirmReport">挂失</view>
+</view>
