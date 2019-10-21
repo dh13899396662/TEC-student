@@ -1,0 +1,86 @@
+<view class='wrap'>
+  <view class='user-head'>
+    <view class='user-head-box'>
+      <view class='user-head-info'>
+        <view class='user-head-avator'>
+          <image src='../../../images/avator.jpg' mode='aspectFill'></image>
+        </view>
+        <view class='user-head-name'>王晓明</view>
+        <view class='user-head-btn' bindtap='toChangeStudent'>学生切换</view>
+      </view>
+      <view class='user-head-menu'>
+        <view class='user-menu'>
+          <view class='user-menu-ico'>
+            <i class='iconfont icon-people'></i>
+          </view>
+          <view class='user-menu-name'>我的班级</view>
+        </view>
+        <view class='user-menu'>
+          <view class='user-menu-ico'>
+            <i class='iconfont icon-book'></i>
+          </view>
+          <view class='user-menu-name'>我的课程</view>
+        </view>
+        <view class='user-menu'>
+          <view class='user-menu-ico'>
+            <i class='iconfont icon-exam2 user-small'></i>
+          </view>
+          <view class='user-menu-name'>我的考勤</view>
+        </view>
+        <view class='user-menu'>
+          <view class='user-menu-ico'>
+            <i class='iconfont icon-user1 user-small'></i>
+          </view>
+          <view class='user-menu-name'>我的信息</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view  class='user-body'>
+    <view class='user-item'>
+      <view class='user-item-icon'>
+        <i class='iconfont icon-school'></i>
+      </view>
+      <view class='user-item-name'>培训中心</view>
+      <view class='user-item-tip'>
+        <i class='iconfont icon-next'></i>
+      </view>
+    </view>
+    <view class='user-item'>
+      <view class='user-item-icon'>
+        <i class='iconfont icon-qingjia'></i>
+      </view>
+      <view class='user-item-name'>学生请假</view>
+      <view class='user-item-tip'>
+        <i class='iconfont icon-next'></i>
+      </view>
+    </view>
+    <view class='user-item'>
+      <view class='user-item-icon'>
+        <i class='iconfont icon-tupian'></i>
+      </view>
+      <view class='user-item-name'>我的风采</view>
+      <view class='user-item-tip'>
+        <i class='iconfont icon-next'></i>
+      </view>
+    </view>
+    <view class='user-item'>
+      <view class='user-item-icon'>
+        <i class='iconfont icon-pinglun'></i>
+      </view>
+      <view class='user-item-name'>我的评论</view>
+      <view class='user-item-tip'>
+        <i class='iconfont icon-next'></i>
+      </view>
+    </view>
+    <view class='user-item'>
+      <view class='user-item-icon'>
+        <i class='iconfont icon-door-lock-box-fill'></i>
+      </view>
+      <view class='user-item-name'>门禁挂失</view>
+      <view class='user-item-tip'>
+        <i class='iconfont icon-next'></i>
+      </view>
+    </view>
+  </view>
+</view>

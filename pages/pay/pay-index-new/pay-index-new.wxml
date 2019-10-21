@@ -10,7 +10,7 @@
   </view>
   <view class='banner-wrap'>
     <swiper indicator-dots="{{ option.dot }}">
-        <swiper-item wx:for="{{ 3 }}">
+        <swiper-item wx:for="{{ 3 }}" wx:key="index">
           <image src='../../../images/banner.jpg' mode="aspectFill"></image>
         </swiper-item>
     </swiper>
@@ -33,7 +33,7 @@
       <view class='class-more' bindtap='toClassList'>全部课程</view>
     </view>
     <view class='class-body'>
-      <view class='class-item' wx:for="{{ 3 }}">
+      <view class='class-item' wx:for="{{ 3 }}" wx:key="index">
         <view class='class-img'>
           <image src='../../../images/atlas.jpg' mode='aspectFill'></image>
         </view>

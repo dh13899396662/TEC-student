@@ -1,0 +1,118 @@
+/** 新首页 **/
+page {
+  background-color: #f5faf7;
+  font-family: PingFang SC;
+}
+
+.user-head {
+  background-image: linear-gradient(#31B17F, #148b5c);
+  border-radius: 0 0 100rpx 100rpx;
+  padding-bottom: 200rpx;
+}
+
+.user-head-box {
+  padding: 50rpx 50rpx 0;
+}
+
+.user-head-info {
+  width: 650rpx;
+  height: 140rpx;
+  display: flex;
+}
+
+.user-head-avator,
+.user-head-avator image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 70rpx;
+}
+
+.user-head-name {
+  width: 380rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 38rpx;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  overflow: hidden;
+}
+
+.user-head-btn {
+  width: 130rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: right;
+}
+
+.user-head-menu {
+  margin-top: 50rpx;
+  display: flex;
+}
+
+.user-menu {
+  width: 25%;
+  color: #fff;
+  text-align: center;
+}
+
+.user-menu-ico {
+  padding-bottom: 10rpx;
+}
+
+.user-menu-ico i {
+  font-size: 52rpx;
+  text-shadow: 0 0 10rpx #076d45;
+}
+
+.user-menu-name {
+  font-size: 28rpx;
+}
+
+.user-body {
+  width: 650rpx;
+  height: auto;
+  background-color: #fff;
+  border-radius: 40rpx;
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, .08);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -150rpx;
+}
+
+.user-item {
+  line-height: 50rpx;
+  padding: 40rpx;
+  display: flex;
+}
+
+.user-item-icon {
+  width: 100rpx;
+}
+
+.user-item-icon i {
+  font-size: 44rpx;
+}
+
+.user-item-name {
+  width: 420rpx;
+  font-size: 36rpx;
+}
+
+.user-item-tip {
+  width: 50rpx;
+  text-align: right;
+}
+
+.user-item-tip i {
+  font-size: 32rpx;
+  color: #999;
+}
+
+/* 控制图标，解决部分图标过大 */
+i.user-small {
+  font-size: 40rpx;
+}

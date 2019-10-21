@@ -1,0 +1,24 @@
+<view class='wrap'>
+  <view class='student-tip'>
+    当前学生:
+      <text>{{ nowStudent.name }}</text>
+    ,切换后小程序全部内容已当前学生信息为主
+  </view>
+  <view class='student-list'>
+    <radio-group bindchange="radioChange">
+      <label class='student-item' wx:for='{{ 4 }}' wx:key='index'>
+        <view class='student-avator'>
+          <image src='../../../images/avator.jpg' mode='aspectFill'></image>
+        </view>
+        <view class='student-info'>
+          <view class='student-name'>张晓星</view>
+          <view class='student-team'>艺术培训一期二班</view>
+        </view>
+        <view class='student-change'>
+          <radio value="{{index}}" checked="{{index === 1}}"></radio>
+        </view>
+      </label>
+    </radio-group>
+  </view>
+  <view class='student-btn'>确认切换</view>
+</view>

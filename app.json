@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/pay/pay-index-new/pay-index-new",
+    "pages/user-center/new-center/new-center",
+    "pages/user-center/change-student/change-student",
+    "pages/login/login",
     "pages/pay/pay-class-list/pay-class-list",
     "pages/pay/pay-class-detail/pay-class-detail",
     "pages/pay/pay-index/pay",
@@ -56,13 +58,13 @@
         "selectedIconPath": "images/tab/tab-2-2.png"
       },
       {
-        "pagePath": "pages/payfee/payfee",
+        "pagePath": "pages/timetable/timetable",
         "text": "课程表",
         "iconPath": "images/tab/tab-3-1.png",
         "selectedIconPath": "images/tab/tab-3-2.png"
       },
       {
-        "pagePath": "pages/user-center/student-center/student-center",
+        "pagePath": "pages/user-center/new-center/new-center",
         "text": "我的",
         "iconPath": "images/tab/tab-4-1.png",
         "selectedIconPath": "images/tab/tab-4-2.png"
