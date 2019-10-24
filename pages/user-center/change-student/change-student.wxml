@@ -6,19 +6,16 @@
   </view>
   <view class='student-list'>
     <radio-group bindchange="radioChange">
-      <label class='student-item' wx:for='{{ 4 }}' wx:key='index'>
+      <label class='student-item' wx:for='{{ list }}' wx:key='index'>
         <view class='student-avator'>
-          <image src='../../../images/avator.jpg' mode='aspectFill'></image>
+          <image src='{{item.avatarUrl}}' mode='aspectFill'></image>
         </view>
         <view class='student-info'>
-          <view class='student-name'>张晓星</view>
+          <view class='student-name'>{{item.stu_name}}</view>
           <view class='student-team'>艺术培训一期二班</view>
-        </view>
-        <view class='student-change'>
-          <radio value="{{index}}" checked="{{index === 1}}"></radio>
         </view>
       </label>
     </radio-group>
   </view>
-  <view class='student-btn'>确认切换</view>
+  <view class='student-btn' bindtap="addStudent">新增学生</view>
 </view>

@@ -1,4 +1,6 @@
 // pages/pay/signUp/signUp.js
+import * as api from '../../../api/index.js'
+import * as xx from '../../../common/wx.js'
 var app = getApp();
 Page({
 
@@ -10,31 +12,28 @@ Page({
     selectStudentindex: 0,
     classList: [{ names: "语文课" }, { names: "数学课" }, { names: "英语课" }],
     studentList: [{ names: "小王" }, { names: "小二王" }, { names: "小三王" }],
-    checkedRead: false
+    checkedRead: false,
+    detail: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    wx.getStorage({
-      key: 'coureInfo',
-      success: function (res) {
-        console.log(res.data)
-        that.setData({
-          coureInfo: res.data,
-        });
-      },
-    });
-    wx.getStorage({
-      key: 'UserInfos',
-      success: function (res) {
-        console.log(res.data)
-        that.setData({
-          UserInfos: res.data,
-        });
-      },
+    let detail = JSON.parse(options.detail)
+    var that = this.loadDefaultStudent()
+    this.setData({
+      detail
+    })
+  },
+  loadDefaultStudent () {
+    api.loadDefaultStudent().then(res => {
+      if (res.data.retCode === xx.ERRCODE.OK) {
+        this.setData({
+          UserInfos: res.data.retMsg,
+        })
+        console.log(res)
+      }
     })
   },
 //切换课程选择
@@ -88,10 +87,13 @@ showActions:function(){
 
 confirmButtons:function(){
   var that = this;
+  console.log(that.data.detail)
   app.network.ajax({
     url: 'school/selectCourse',
     params: {
-      cids: that.data.coureInfo.class_id
+      course_id: that.data.detail.id,
+      class_id: that.data.detail.class_id,
+      order_amt: that.data.detail.course_price
     },
     success(res) {
       console.log(res)

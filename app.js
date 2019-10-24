@@ -65,5 +65,6 @@ App({
     sessionId: '',
     isNew: true,
     showLogin: false,
-  }
+  },
+  network: require('utils/network.js')
 })

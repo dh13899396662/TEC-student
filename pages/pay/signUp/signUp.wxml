@@ -11,26 +11,26 @@
             </picker>
           </view> -->
            <view class="classes flex-row-around">
-            <view class="classes">{{coureInfo.course_name}}</view>
+            <view class="classes">{{detail.course_name}}</view>
           </view>
       </view>
       <view class="inputsSign listsSign flex-row-between">
           <view>课程收费</view>
           <view class="classes flex-row-around">
-            <view class="classes1">{{coureInfo.course_price}}</view>
+            <view class="classes1">{{detail.course_price}}</view>
             <view>元/节</view> 
           </view>
       </view>
       <view class="inputsSign listsSign flex-row-between">
           <view>课程时间</view>
           <view class="classes">
-            {{coureInfo.week_day}}  {{coureInfo.plan_type}}
+            {{detail.week_day}}  {{coureInfo.plan_type}}
           </view>
       </view>
       <view class="inputsSign listsSign flex-row-between">
           <view>任课老师</view>
           <view class="classes">
-            {{coureInfo.user_name}}
+            {{detail.user_name}}
           </view>
       </view>
   <view class="sign-class inputsSign">学生信息</view>

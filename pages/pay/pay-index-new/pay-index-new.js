@@ -16,9 +16,12 @@ Page({
     schoolData: ['新疆大学喀什东路北校区', '新疆师范大学新医路校区'],
     list: []
   },
-  toClassDetail() {
+  toClassDetail(e) {
+    let index = e.currentTarget.dataset.index
+    console.log(index)
+    let data = JSON.stringify(this.data.list[index])
     wx.navigateTo({
-      url: '../pay-class-detail/pay-class-detail',
+      url: '../pay-class-detail/pay-class-detail?data=' + data,
     })
   },
   schoolChange (e) {
@@ -54,6 +57,12 @@ Page({
     xx.load()
     api.getStudentCourses({ pageNumber: 1, pageSize: 3, sortField: '', sortMethord: ''}).then(res => {
       if (res.data.retCode === xx.ERRCODE.OK) {
+        res.data.retMsg.list.forEach(item => {
+          if (item.course_imgs) {
+            item.course_imgs = item.course_imgs.slice(0, -1)
+            item.course_imgs = item.course_imgs.split(',')
+          }
+        })
         this.setData({
           list: res.data.retMsg.list
         })

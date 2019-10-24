@@ -74,3 +74,19 @@ export const getDate = data => request(`
 
 // 课程查询
 export const getStudentCourses = data => request(`/jiaofei/wxa/school/queryCourses?pageNumber=${data.pageNumber}&pageSize=${data.pageSize}&sortField=${data.sortField}&sortMethord=${data.sortMethord}`, 'get', data, true)
+
+// 获取数据字典
+export const queryDicts = data => request(`
+/jiaofei/wxa/common/queryDicts?dict_type=course_type`, 'post', data, true)
+
+// 注册
+export const register = data => request(`
+/jiaofei/wxa/school/register`, 'post', data, true, 'application/x-www-form-urlencoded')
+
+// 获取我关联的学生
+export const loadMyStudents = () => request(`
+/jiaofei/wxa/school/loadMyStudents`, 'post', {}, true, 'application/x-www-form-urlencoded')
+
+// 获取默认学生
+export const loadDefaultStudent = () => request(`
+/jiaofei/wxa/school/loadDefaultStudent`, 'post', {}, true, 'application/x-www-form-urlencoded')

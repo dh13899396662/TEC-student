@@ -17,6 +17,8 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
+    xx.setCookie('avatarUrl', e.detail.userInfo.avatarUrl)
+    console.log(e.detail.userInfo)
     if (!this.data.userInfo) {
       wx.showToast({
         title: '您拒绝了授权请求请重新获取',

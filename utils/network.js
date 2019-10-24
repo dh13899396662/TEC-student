@@ -1,5 +1,5 @@
 var app = getApp()
-
+import * as xx from '../common/wx.js'
 module.exports = {
   /**
    * @methord app.network.ajax   
@@ -59,7 +59,7 @@ module.exports = {
       url: getApp().globalData.requestUrl + '/' + _url,
       method: _type,
       header: {
-        'wxa-sessionid': getApp().globalData.sessionId,
+        'wxa-sessionid': xx.getCookie('token'),
         "Content-Type": "application/x-www-form-urlencoded"
       },
       data: _params,

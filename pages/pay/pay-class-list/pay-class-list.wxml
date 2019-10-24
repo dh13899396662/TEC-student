@@ -2,23 +2,23 @@
   <view class="comment-top">
     <i class="iconfont icon-filter t-co"></i>
     <picker class="picker-item t-bg" bindchange="typeChange"
-     value="{{ type }}" range="{{ typeData }}">{{ typeData[type] }}</picker>
-    <picker class="picker-item t-bg" bindchange="timeChange"
-     value="{{ time }}" range="{{ timeData }}">{{ timeData[time] }}</picker>
+     value="{{ type }}" range="{{ typeData }}" range-key="dict_label">{{ typeData[type].dict_label }}</picker>
+    <!-- <picker class="picker-item t-bg" bindchange="timeChange"
+     value="{{ time }}" range="{{ timeData }}">{{ timeData[time] }}</picker> -->
   </view>
   <view class='class-wrap'>
-    <view class='class-item' wx:for="{{ 3 }}">
+    <view class='class-item' wx:for="{{ list }}" wx:index="{{index}}">
       <view class='class-img'>
-        <image src='../../../images/atlas.jpg' mode='aspectFill'></image>
+        <image src='{{item.course_imgs[0]}}' mode='aspectFill'></image>
       </view>
       <view class='class-infos'>
-        <view class='class-name'>培训课程名称，课程内容上面课程</view>
+        <view class='class-name'>{{item.course_name}}</view>
         <view class='class-info'>
-          <view class='class-thname'>授课老师：黄老师</view>
+          <view class='class-thname'>授课老师：{{item.user_name}}</view>
           <view class='class-price'>
             价格：
-            <text>￥599</text>
-            <view class='class-btn' bindtap='toClassDetail'>查看课程</view>
+            <text>￥{{item.course_price}}</text>
+            <view class='class-btn' data-index="{{index}}" bindtap='toClassDetail'>查看课程</view>
           </view>
         </view>
       </view>

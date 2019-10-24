@@ -1,5 +1,6 @@
 // pages/user-center/addStudent/addStudent.js
 var app = getApp();
+import * as xx from '../../../common/wx.js'
 Page({
 
   /**
@@ -22,11 +23,15 @@ Page({
      var that = this;
      console.log(that.data)
      var datas = that.data;
+    if (!datas.stu_name || !datas.stu_sex || !datas.stu_birthDay || !datas.stu_fatherName || !datas.stu_fatherJob || !datas.stu_fatherTel || !datas.stu_motherName || !datas.stu_motherJob || !datas.stu_motherTel) {
+      xx.toast('请完善信息')
+      return
+    }
     app.network.ajax({
       url: 'school/register',
       params: {
         stu_name: datas.stu_name,
-        stu_sex: datas.stu_sex,
+        stu_sex: datas.stu_sex === '男' ? 0 : 1,
         stu_birthDay: datas.stu_birthDay,
         stu_fatherName: datas.stu_fatherName,
         stu_fatherJob: datas.stu_fatherJob,
@@ -36,10 +41,10 @@ Page({
         stu_motherTel: datas.stu_motherTel,
       },
       success(res) {
-        
-        wx.navigateBack({
-          
-        })
+        console.log(res)
+        if (res) {
+          xx.toast('注册成功', () => xx.back())
+        }
       },
       error(err) {
       }

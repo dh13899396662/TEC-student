@@ -35,15 +35,15 @@
     <view class='class-body'>
       <view class='class-item' wx:for="{{ list }}" wx:key="index">
         <view class='class-img'>
-          <image src='{{item.course_imgs}}' mode='aspectFill'></image>
+          <image src='{{item.course_imgs[0]}}' mode='aspectFill'></image>
         </view>
         <view class='class-infos'>
-          <view class='class-name'>{{course_memo}}</view>
+          <view class='class-name'>{{item.course_name}}</view>
           <view class='class-info'>
-            <view class='class-thname'>授课老师：黄老师</view>
+            <view class='class-thname'>授课老师：{{item.user_name}}</view>
             <view class='class-price'>
-              价格：<text>￥599</text>
-              <view class='class-btn' bindtap='toClassDetail'>查看课程</view>
+              价格：<text>￥{{item.course_price}}</text>
+              <view class='class-btn' data-index="{{index}}" bindtap='toClassDetail'>查看课程</view>
             </view>
           </view>
         </view>

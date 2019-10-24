@@ -76,7 +76,6 @@ page {
 	line-height: 40rpx;
 	font-size: 32rpx;
 	color: #333;
-	text-indent: 56rpx;
 }
 
 .detail-btn {

@@ -1,33 +1,31 @@
 <view class='wrap'>
   <view class='detail-swiper'>
     <swiper indicator-dots="{{ option.dot }}">
-        <swiper-item wx:for="{{ 3 }}">
-          <image src='../../../images/atlas.jpg' mode='aspectFill'></image>
+        <swiper-item wx:for="{{ detail.course_imgs }}" wx:index="{{index}}">
+          <image src='{{item}}' mode='aspectFill'></image>
         </swiper-item>
     </swiper>
   </view>
   <view class='detail-wrap'>
     <view class='detail-infos'>
       <view class='detail-name'>
-        培训课程名称，课程内容上面课程
+        {{detail.course_name}}
       </view>
       <view class='detail-info'>
-        授课老师：黄老师
+        上课时间：{{detail.plan_date}} {{detail.plan_zone}}
       </view>
       <view class='detail-info'>
-        授课老师：黄老师
-      </view>
-      <view class='detail-info'>
-        授课老师：黄老师
+        授课老师：{{detail.user_name}}
       </view>
       <view class='detail-price'>
-        ￥599
+        ￥{{detail.course_price}}
       </view>
     </view>
     <view class='detail-content'>
       <view class='detail-title'>详细介绍</view>
       <view class='detail-cont'>
-        <rich-text class='detail-rich' nodes="{{ nodes }}"></rich-text>
+        <view class='detail-rich'>{{detail.course_memo}}</view>
+        <!-- <rich-text class='detail-rich' nodes="{{ nodes }}"></rich-text> -->
       </view>
     </view>
   </view>
