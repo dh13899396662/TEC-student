@@ -7,7 +7,7 @@
     </view>
     <view class='tip-info'>使用家教服务，需要您授权登录</view>
   </view>
-  <button class='get-btn' type="primary" bindgetuserinfo="getUserInfo" open-type="getUserInfo">
+  <button class='get-btn' type="primary" bindgetuserinfo="userInfoHandler" open-type="getUserInfo">
     授权登录
   </button>
 </view>

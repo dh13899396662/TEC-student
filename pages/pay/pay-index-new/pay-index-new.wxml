@@ -22,7 +22,7 @@
     <view class='notice-cont'>
       <swiper autoplay vertical circular>
         <swiper-item wx:for="{{ noticeData }}" wx:key="{{ index }}">
-          <view class="swiper-item" bindtap="toNoticeDetail" data-id="{{ item.id }}">{{ item.title }}</view>
+          <view class="swiper-item" bindtap="toNoticeDetail" data-index="{{ index }}">{{ item.notice_title }}</view>
         </swiper-item>
       </swiper>
     </view>
@@ -33,12 +33,12 @@
       <view class='class-more' bindtap='toClassList'>全部课程</view>
     </view>
     <view class='class-body'>
-      <view class='class-item' wx:for="{{ 3 }}" wx:key="index">
+      <view class='class-item' wx:for="{{ list }}" wx:key="index">
         <view class='class-img'>
-          <image src='../../../images/atlas.jpg' mode='aspectFill'></image>
+          <image src='{{item.course_imgs}}' mode='aspectFill'></image>
         </view>
         <view class='class-infos'>
-          <view class='class-name'>培训课程名称，课程内容上面课程</view>
+          <view class='class-name'>{{course_memo}}</view>
           <view class='class-info'>
             <view class='class-thname'>授课老师：黄老师</view>
             <view class='class-price'>

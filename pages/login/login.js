@@ -1,143 +1,81 @@
-//login.js
+//index.js
 //获取应用实例
-const app = getApp()
+import * as api from '../../api/index.js'
+import * as xx from '../../common/wx.js'
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    skipUrl: '',
+    systemType: {}
   },
-  onLoad: function() {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+  userInfoHandler(e) {
+    wx.showLoading({
+      title: '获取微信授权中',
+      mask: true
+    })
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
+    if (!this.data.userInfo) {
+      wx.showToast({
+        title: '您拒绝了授权请求请重新获取',
+        icon: 'none',
       })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
     } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+      this._login()
     }
   },
-  getUserInfo: function(e) { //点击登陆按钮
-    wx.showLoading({
-      title: '',
-    })
+  _login() {
+    let that = this
     wx.login({
-      success(res) { //获取用户信息,获取code的那个接口
-        // wx.showLoading({
-        //     title: '加载中',
-        //     mask: true,
-        // })
-        if (res.code) { //code传到后台去,获取sessionId
-          wx.request({
-            url: app.globalData.requestUrl + '/user/login',
-            method: "POST",
-            data: {
-              code: res.code
-            },
-            header: {
-              "Content-Type": "application/x-www-form-urlencoded"
-            },
-            success(res) {
-              app.globalData.sessionId = res.data.sessionId;
-              app.globalData.isNew = res.data.isNew; //是否是新用户
-              if (app.globalData.isNew) { //新用户,往后台传
-                wx.getUserInfo({
-                  success(res) {
-                    console.log(res)
-                    wx.request({
-                      url: app.globalData.requestUrl + '/user/info',
-                      header: {
-                        "Content-Type": "application/x-www-form-urlencoded",
-                        'wxa-sessionid': getApp().globalData.sessionId,
-                      },
-                      method: "POST",
-                      data: {
-                        signature: res.signature,
-                        rawData: res.rawData,
-                        iv: res.iv,
-                        encryptedData: res.encryptedData
-                      },
-                      success(res) {
-                        wx.hideLoading()
-                        wx.navigateBack({
-
-                        })
-                        // wx.getStorage({
-                        //     key: 'prePageUrl',
-                        //     success(res) {
-                        //         if (res.data.params) {
-                        //             wx.navigateTo({
-                        //                 url: '/' + res.data.url + '?vsinfos=' + res.data.params,
-                        //             })
-                        //         } else {
-                        //             wx.navigateTo({
-                        //                 url: '/' + res.data.url,
-                        //             })
-                        //         }
-                        //     }
-                        // })
-                      }
-                    })
-                  }
-                })
-              } else {
-                wx.hideLoading()
-                wx.navigateBack({
-
-                })
-                // wx.getStorage({
-                //     key: 'prePageUrl',
-                //     success(res) {
-                //         if (res.data.params){
-                //             wx.navigateTo({
-                //                 url: '/' + res.data.url + '?vsinfos=' + res.data.params,
-                //             })
-                //         }else{
-                //             wx.navigateTo({
-                //                 url: '/' + res.data.url,
-                //             })
-                //         }
-                //     }
-                // })
-              }
-            }
-          })
-        } else {}
+      success(res) {
+        if (res.code) {
+          let obj = {}
+          console.log(res)
+          obj.code = res.code
+          that._getToken(obj)
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    });
+  },
+  _getToken(obj) {
+    const datas = {
+      code: obj.code
+    }
+    api.getToken(datas).then(res => {
+      if (res.data.sessionId) {
+        xx.hide()
+        xx.setCookie('token', res.data.sessionId)
+        // res.data.isNew && this.infoCheck()
+        // !res.data.isNew && this.teacherCheck()
+        xx.reLaunch('/pages/pay/pay-index-new/pay-index-new')
+      } else {
+        xx.toast2(res.data.msg)
+      }
+    })
+  },
+  infoCheck() {
+    let that = this
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res)
+        let data = { signature: res.signature, rawData: res.rawData, iv: res.iv, encryptedData: encodeURIComponent(res.encryptedData) }
+        api.getUnionId(data).then(res => that.teacherCheck()).catch(ret => {
+          throw Error(ret)
+        })
+      }
+    })
+  },
+  teacherCheck() {
+    api.teacherCheck().then(res => {
+      if (res.data.retCode === xx.ERRCODE.NO_ATTEST) {
+        xx.reLaunch('/pages/index/index')
+      } else {
+        xx.barTo('/pages/pay/pay-index/pay')
       }
     })
   }
 })
-
-// 接口调用方式
-
-// app.network.ajax({
-//   url: 'mingpian/wxa/card/myFans',
-//   params: {
-
-// },
-//   success(res) {
-//     
-//   },
-//   error(err) {
-//   }
-// })

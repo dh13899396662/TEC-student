@@ -42,16 +42,16 @@ App({
       wx.reLaunch({
         url: '/pages/login/login'
       })
-    } else this.teacherChecked()
+    }
   },
   teacherChecked() {
     console.log('teacherChecked')
     api.teacherCheck().then(res => {
       console.log(res)
       if (res.data.retCode === xx.ERRCODE.NO_ATTEST) {
-        xx.reLaunch('/pages/teacher-check/teacher-check')
-      } else {
         xx.reLaunch('/pages/index/index')
+      } else {
+        xx.barTo('/pages/pay/pay-index/pay')
       }
     }).catch(ret => console.log(ret))
   },

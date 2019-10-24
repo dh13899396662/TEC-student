@@ -50,10 +50,15 @@ page {
 .user-head-menu {
   margin-top: 50rpx;
   display: flex;
+  height: 110rpx
 }
 
 .user-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 25%;
+  height: 100%;
   color: #fff;
   text-align: center;
 }
