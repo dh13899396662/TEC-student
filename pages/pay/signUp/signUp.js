@@ -96,15 +96,15 @@ confirmButtons:function(){
       order_amt: that.data.detail.course_price
     },
     success(res) {
-      console.log(res)
+      xx.toast('报名成功', () => {
+        wx.navigateTo({
+          url: '../pay-page/pay-page',
+        })
+      })
     },
     error(err) {
+      xx.toast(err)
     }
-  })
-
-
-  wx.navigateTo({
-    url: '../pay-page/pay-page',
   })
 },
 //获取用户手机号

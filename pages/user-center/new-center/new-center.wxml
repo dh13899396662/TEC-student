@@ -3,7 +3,7 @@
     <view class='user-head-box'>
       <view class='user-head-info'>
         <view class='user-head-avator'>
-          <image src='../../../images/avator.jpg' mode='aspectFill'></image>
+          <image src='{{avatarUrl}}' mode='aspectFill'></image>
         </view>
         <view class='user-head-name'>王晓明</view>
         <view class='user-head-btn' bindtap='toChangeStudent'>学生切换</view>
@@ -27,7 +27,7 @@
           </view>
           <view class='user-menu-name'>我的考勤</view>
         </view>
-        <view class='user-menu'>
+        <view class='user-menu' bindtap="myInfo">
           <view class='user-menu-ico'>
             <i class='iconfont icon-user1 user-small'></i>
           </view>

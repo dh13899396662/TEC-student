@@ -1,0 +1,80 @@
+/** 新首页 **/
+page {
+  background-color: #f5faf7;
+  font-family: PingFang SC;
+}
+
+.student-tip {
+  background-color: rgb(189, 243, 222);
+  font-size: 26rpx;
+  color: rgb(111, 182, 155);
+  padding: 20rpx 40rpx;
+}
+
+.student-tip > text {
+  font-weight: bold;
+  color: #31B17F;
+  padding: 0 10rpx;
+}
+
+.student-list {
+  padding: 0 50rpx 50rpx;
+}
+
+.student-item {
+  width: 670rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40rpx;
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.student-avator,
+.student-avator > image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  overflow: hidden;
+}
+
+.student-avator {
+  display: block;
+}
+
+.student-info {
+  width: 400rpx;
+  height: 90rpx;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+}
+
+.student-name {
+  line-height: 40rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.student-team {
+  line-height: 30rpx;
+  font-size: 26rpx;
+  color: #999;
+  padding-top: 10rpx;
+}
+
+.student-change {
+  width: 100rpx;
+  text-align: right;
+}
+
+.student-btn {
+  width: 670rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #31B17F;
+  font-size: 34rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 45rpx;
+  margin: 30rpx auto;
+}
